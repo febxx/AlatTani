@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "238696511580",
+    "project_id": "testflutter-edde1",
+    "storage_bucket": "testflutter-edde1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238696511580:android:f8b9f7bc008b7fc253ce99",
+        "android_client_info": {
+          "package_name": "com.example.alat_tani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238696511580-lpsf1dna1e7bsi1n7cu4anggskbt77pd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7sDpKU-f9h5RDRsATkCqcxC1-IDY2LTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238696511580-lpsf1dna1e7bsi1n7cu4anggskbt77pd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "238696511580-4ov4keehcsv653ct09gg15rid62n1mil.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.alatTani"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

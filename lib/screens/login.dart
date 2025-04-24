@@ -1,5 +1,4 @@
 import 'package:alat_tani/constant.dart';
-import 'package:alat_tani/screens/home.dart';
 import 'package:alat_tani/screens/register.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -155,9 +154,10 @@ class _LoginPageState extends State<LoginPage> {
       await FirebaseAuth.instance
         .signInWithEmailAndPassword(email: email, password: password)
         .then((uid) => {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return const Home();
-          }))
+          print(uid)
+          // Navigator.push(context, MaterialPageRoute(builder: (context) {
+          //   return ();
+          // }))
         });
     }
   }

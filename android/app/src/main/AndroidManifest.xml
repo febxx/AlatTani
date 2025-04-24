@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.alat_tani">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
         android:label="alat_tani"
         android:name="${applicationName}"
@@ -29,7 +29,5 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAV9Xl1SNmHaGkUf7IxJkR7VF6R-Vak71U"/>
     </application>
 </manifest>

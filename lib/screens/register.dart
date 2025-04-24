@@ -157,26 +157,31 @@ class _RegisterPageState extends State<RegisterPage> {
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
       return;
     } else {
-      try {
-        await FirebaseAuth.instance.createUserWithEmailAndPassword(email: email, password: password);
-        final data = Users(
-          username: username, 
-          alamat: alamat, 
-          email: email, 
-          password: password
-        );
+      // try {
+      //   await FirebaseAuth.instance
+      //     .createUserWithEmailAndPassword(email: email, password: password)
+      //     .then((uid) => {
+      //       Navigator.push(context, MaterialPageRoute(builder: (_) {
+      //         return const LoginPage();
+      //       }))
+      //     });
+      // } catch (e) {
+      //   print(e);
+      // }
 
-        final docData = FirebaseFirestore.instance.collection("users").doc();
-        data.id = docData.id;
-        final json = data.toJson();
-        docData.set(json);
+      final data = Users(
+        username: username, 
+        alamat: alamat, 
+        email: email, 
+        password: password
+      );
 
-        Navigator.push(context, MaterialPageRoute(builder: (_) {
-          return const LoginPage();
-        }));
-      } catch (e) {
-        print(e);
-      }
+      final docData = FirebaseFirestore.instance.collection("users").doc();
+      print(docData.id);
+      data.id = docData.id;
+      final json = data.toJson();
+      FirebaseFirestore.instance.collection("users").doc(docData.id).set(json).then((value) => print("User Added"));
+      print(json);
     }
   }
 }
